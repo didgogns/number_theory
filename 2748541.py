@@ -36,7 +36,7 @@ def init():
             table23[a] = False
         if a not in [0, 1, 4, 5, 6, 7, 9, 13, 16, 20, 22, 23, 24, 25, 28]:
             table29[a] = False
-    print('init() function: ' + time.process_time() - original_time)
+    print('init() function: ' + str(time.process_time() - original_time))
 
 
 def is_square(apositiveint):
@@ -97,7 +97,7 @@ def check1():
                 if is_square(abs(n - x ** 3)) is not False:
                     print(n, x, n - x ** 3)
         x += 1
-    print('check1() function: ' + time.process_time() - original_time)
+    print('check1() function: ' + str(time.process_time() - original_time))
 
 
 # Check for the case where two of exponents are (2, 4)
@@ -116,7 +116,7 @@ def check2():
                 if is_square(abs(n - x ** 4)) is not False:
                     print(n, x, n - x ** 4)
         x += 1
-    print('check2() function: ' + time.process_time() - original_time)
+    print('check2() function: ' + str(time.process_time() - original_time))
 
 
 # Check for the case where two of exponents are (2, 5)
@@ -135,7 +135,7 @@ def check3():
                 if is_square(abs(n - x ** 5)) is not False:
                     print(n, x, n - x ** 5)
         x += 1
-    print('check3() function: ' + time.process_time() - original_time)
+    print('check3() function: ' + str(time.process_time() - original_time))
 
 
 # Check for the case where two of exponents are not (2, 3), (2, 4), (2, 5)
@@ -158,7 +158,7 @@ def checkFinal():
                         print(x, xx, n, n - xx)
                 xx *= x
         x += 1
-    print('checkFinal() function: ' + time.process_time() - original_time)
+    print('checkFinal() function: ' + str(time.process_time() - original_time))
 
 
 if __name__ == '__main__':
